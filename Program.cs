@@ -20,8 +20,8 @@ class DSA
         //var subArrays = arrOp.subArrays(arr);
         //var reversedArr = arrOp.reverseArray(arr, 2);
         //var rotatedArr = arrOp.arrayRotationJugglingAlgo(arr, 3, "left");
-        var filteredArray = arrOp.moveZerosToEnd(arr);
-        var temp = filteredArray[filteredArray.Length - 3];
+        //var filteredArray = arrOp.moveZerosToEnd(arr);
+        var hasDuplicate = arrOp.hasDuplicate(arr);
         //Console.WriteLine("Rotated Array " + rotatedArr);
 
 

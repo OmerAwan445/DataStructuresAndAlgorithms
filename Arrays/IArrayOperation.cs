@@ -23,5 +23,6 @@ namespace DataStructuresAndAlgorithms.Arrays
         int[] reverseArray(int[] arr, int d);
         int[] arrayRotationJugglingAlgo(int[] arr, int k, string direction);
         int[] moveZerosToEnd(int[] arr);
+        bool hasDuplicate(int[] arr);
     }
 }
