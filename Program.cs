@@ -1,25 +1,29 @@
-﻿using DataStructuresAndAlgorithms.LinkedList;
-
+﻿using DataStructuresAndAlgorithms.Arrays;
 class DSA
 {
     public static void Main()
     {
-        MyLinkedList<String> l1 = new MyLinkedList<String>();
-        l1.AddDataToFront("Umer");
-        l1.AddDataToFront("Ali");
-        l1.AddDataToFront("Ahmed");
-        l1.AddDataToFront("Saad");
+        int[] arr = { 1, 2, 0, 3, 0, 0, 0, 4, 10 };
+        int len = 5;
+        IArrayOperation arrOp = new ArrayOperation();
+        //arrOp.InsertElementNoReverseLoop(arr, 5, 8, 2);
+        //arrOp.InsertElement(arr, len, 8, 2);
+        //len++;
+        //arrOp.DeleteElement(arr, 6, 8);
+        //len--;
+        //int secondMax = arrOp.getSecondLargest_2Pass(arr, 5);
+        //int secondMax = arrOp.getSecondLargest_1Pass(arr, 5);
+        //int[] threeMaxs = arrOp.findThreeDiffLargest(arr);
+        //var leaders = arrOp.findLeaders(arr);
+        //var isSorted = arrOp.isSorted(arr);
+        //var removedDuplicateArr = arrOp.removeDuplicate(arr);
+        //var subArrays = arrOp.subArrays(arr);
+        //var reversedArr = arrOp.reverseArray(arr, 2);
+        //var rotatedArr = arrOp.arrayRotationJugglingAlgo(arr, 3, "left");
+        var filteredArray = arrOp.moveZerosToEnd(arr);
+        var temp = filteredArray[filteredArray.Length - 3];
+        //Console.WriteLine("Rotated Array " + rotatedArr);
 
-        l1.AddDataToEnd("Data to End");
 
-        l1.AddDataBefore("Before Ahmed", "Ahmed");
-        l1.AddDataBefore("Before Saad", "Saad");
-        l1.AddDataBefore("Before End", "Data to End");
-
-        l1.AddDataAfter("Data after Mid", "Ahmed");
-        l1.AddDataAfter("Data after End", "Data to End");
-        l1.AddDataAfter("Data after start", "Before Saad");
-
-        l1.Display();
     }
 }
